@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CarroApp.Models.Carro>
+
+@{
+    ViewData["Title"] = "";
+}
+
+<h1 class="text-center">Lista de carros</h1>
+
+<p class="text-center">
+    <a asp-action="Create" class="btn btn-primary">Cadastrar Novo Carro</a>
+</p>
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr class="text-center">
+            <th>
+                @Html.DisplayNameFor(model => model.NomeDoCarro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="text-center">
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeDoCarro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td class="text-right">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fas fa-edit fa-lg" title="Editar"></i></a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-info fa-lg" title="Informações"></i></a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash fa-lg" title="Excluir"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
