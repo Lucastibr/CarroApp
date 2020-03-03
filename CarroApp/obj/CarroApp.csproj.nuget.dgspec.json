@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas\\Desktop\\Projetos\\CarroApp\\CarroApp\\CarroApp\\CarroApp.csproj": {}
+    "C:\\Users\\Lucas\\Desktop\\ProjetoCarro\\CarroApp\\CarroApp\\CarroApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas\\Desktop\\Projetos\\CarroApp\\CarroApp\\CarroApp\\CarroApp.csproj": {
+    "C:\\Users\\Lucas\\Desktop\\ProjetoCarro\\CarroApp\\CarroApp\\CarroApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\Projetos\\CarroApp\\CarroApp\\CarroApp\\CarroApp.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\ProjetoCarro\\CarroApp\\CarroApp\\CarroApp.csproj",
         "projectName": "CarroApp",
-        "projectPath": "C:\\Users\\Lucas\\Desktop\\Projetos\\CarroApp\\CarroApp\\CarroApp\\CarroApp.csproj",
+        "projectPath": "C:\\Users\\Lucas\\Desktop\\ProjetoCarro\\CarroApp\\CarroApp\\CarroApp.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas\\Desktop\\Projetos\\CarroApp\\CarroApp\\CarroApp\\obj\\",
+        "outputPath": "C:\\Users\\Lucas\\Desktop\\ProjetoCarro\\CarroApp\\CarroApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarroApp.Models;
-using System.Globalization;
 
 namespace CarroApp.Controllers
 {
@@ -53,7 +52,7 @@ namespace CarroApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,NomeDoCarro,Genre,Ano,Preco")] Carro carro)
         {
-            if (ModelState.IsValid)
+           if (ModelState.IsValid)
             {
                 _context.Add(carro);
                 await _context.SaveChangesAsync();
@@ -143,5 +142,7 @@ namespace CarroApp.Controllers
         {
             return _context.Carro.Any(e => e.Id == id);
         }
+
+       
     }
 }

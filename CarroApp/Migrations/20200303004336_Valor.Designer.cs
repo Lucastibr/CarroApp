@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarroApp.Migrations
 {
     [DbContext(typeof(CarroAppContext))]
-    [Migration("20200225001801_RemoverImagem")]
-    partial class RemoverImagem
+    [Migration("20200303004336_Valor")]
+    partial class Valor
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,8 +28,7 @@ namespace CarroApp.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Ano")
-                        .HasColumnType("int")
-                        .HasMaxLength(4);
+                        .HasColumnType("int");
 
                     b.Property<int>("Genre")
                         .HasColumnType("int");
