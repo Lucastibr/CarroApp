@@ -5,4 +5,4 @@ NUGET PACKAGE MANAGER CONSOLE, o comando : UPDATE-DATABASE.
 
 Com isso, só executar a aplicação.
 
-Alterações ainda serão feitas, como converter a moeda para o real e adicionar imagens a cada carro.
+Alterações ainda serão feitas, como adicionar imagens a cada carro.
